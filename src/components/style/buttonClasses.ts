@@ -1,0 +1,1 @@
+export const buttonClasses = 'rounded-md bg-black text-white border-2 border-black hover:bg-[#333] m-1 p-2 shadow-md active:scale-95 transition-transform duration-[10ms]';
