@@ -4,6 +4,7 @@ import partialsRoute from './routes/partialsRoute';
 import Head from './components/Head/Head';
 import Body from './components/Body/Body';
 import apiRoute from './routes/apiRoute';
+import Loading from './components/Loading/Loading';
 
 const app = new Hono();
 
@@ -25,6 +26,7 @@ app.get('/', async (c) => {
             hx-trigger="load"
             hx-boost={true}
           >
+            <Loading />
           </div>
         </main>
       </Body>
@@ -33,4 +35,3 @@ app.get('/', async (c) => {
 });
 
 export default app;
-

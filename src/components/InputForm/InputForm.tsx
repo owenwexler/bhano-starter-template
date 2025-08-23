@@ -1,5 +1,4 @@
-import { FC } from 'hono/jsx';
-import { html } from 'hono/html';
+import type { FC } from 'hono/jsx';
 import { inputClasses } from '../style/inputClasses';
 import { buttonClasses } from '../style/buttonClasses';
 
@@ -16,7 +15,7 @@ const InputForm: FC = ({ props }) => {
           Enter your name:
         </p>
         <div class="flex flex-row item-center justify-center text-center space-x-4">
-          <input 
+          <input
             id="name-input"
             class={inputClasses}
             name="inputName"
