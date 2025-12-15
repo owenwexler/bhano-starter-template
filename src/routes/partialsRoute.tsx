@@ -25,7 +25,7 @@ partialsRoute.post('/hello', async (c) => {
   const { inputName } = body;
 
   return c.html(
-    <Hello name={inputName} />
+    <Hello name={inputName.toString()} />
   );
 });
 

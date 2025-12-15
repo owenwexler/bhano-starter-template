@@ -1,5 +1,4 @@
 import { Hono } from 'hono';
-import { deleteTestUser } from '../db/models/user';
 
 const apiRoute = new Hono();
 
