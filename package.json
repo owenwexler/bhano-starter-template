@@ -2,7 +2,9 @@
   "name": "bhano-starter-template",
   "scripts": {
     "compile:tailwind": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css --minify",
-    "dev": "bun run nodemon"
+    "build": "bun run compile:tailwind",
+    "dev": "bun run nodemon",
+    "start": "bun --watch run src/index.tsx"
   },
   "module": "index.tsx",
   "type": "module",
